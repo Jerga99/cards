@@ -20,9 +20,6 @@ const scriptRoot = isDevelopment ?
 	"/build";
 
 app.get("*", (req, res) => {
-	let i = 3;
-	let whao = i * 30;
-	console.log(`Whoa is ${whao}`);
 	res.render("index", {
 		useExternalStyles,
 		scriptRoot
